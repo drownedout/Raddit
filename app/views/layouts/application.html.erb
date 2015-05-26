@@ -34,13 +34,14 @@
     </div>
 </header>
 
-<div id="main_content" class="container">
-	<% flash.each do |name, msg| %>
-		<%= content_tag(:div, msg, class: "alert alter-#{name}") %>
-	<% end %>
+	<div id="main_content" class="container">
+		<% flash.each do |name, msg| %>
+			<%= content_tag(:div, msg, class: "alert alter-info") %>
+		<% end %>
 
-	<div id="content" class="col-md-9 center-block">
-		<%= yield %>
+			<div id="content" class="col-md-9 center-block">
+				<%= yield %>
+			</div>
 	</div>
 
 
